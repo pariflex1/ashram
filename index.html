@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quick Contact Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+<title>Krishna Anandam Ashram</title>
+<meta name="Krishna Anandam Ashram" />
+<meta property="og:title" content="Contact Details of Krishna Anandam Ashram" />
+<meta property="og:description" content="Vrindavan, Mathura" />
+<meta property="og:image" content="https://github.com/pariflex1/ashram/blob/gh-pages/Images/og.webp?raw=true" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -14,9 +17,13 @@
     }
 
     body {
+      height: 100vh;
       background: #f4f4f4;
       padding: 20px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .logo {
@@ -53,12 +60,6 @@
       animation: fadeInUp 0.6s ease forwards;
     }
 
-    .buttons a:nth-child(1) { animation-delay: 0.2s; }
-    .buttons a:nth-child(2) { animation-delay: 0.4s; }
-    .buttons a:nth-child(3) { animation-delay: 0.6s; }
-    .buttons a:nth-child(4) { animation-delay: 0.8s; }
-    .buttons a:nth-child(5) { animation-delay: 1s; }
-
     .buttons a:hover {
       background: #e0e0e0;
       transform: translateY(-2px);
@@ -68,19 +69,12 @@
       margin-right: 8px;
     }
 
-    @media (min-width: 600px) {
-      .buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+    .buttons a:nth-child(1) { animation-delay: 0.2s; }
+    .buttons a:nth-child(2) { animation-delay: 0.4s; }
+    .buttons a:nth-child(3) { animation-delay: 0.6s; }
+    .buttons a:nth-child(4) { animation-delay: 0.8s; }
+    .buttons a:nth-child(5) { animation-delay: 1s; }
 
-      .buttons a {
-        flex: 1 1 45%;
-      }
-    }
-
-    /* Animations */
     @keyframes fadeInUp {
       to {
         opacity: 1;
@@ -98,22 +92,32 @@
         transform: scale(1);
       }
     }
+
+    @media (min-width: 600px) {
+      .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .buttons a {
+        flex: 1 1 45%;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Logo Section -->
   <div class="logo">
-    <img src="https://via.placeholder.com/150x80?text=Your+Logo" alt="Logo">
+    <img src="https://github.com/pariflex1/ashram/blob/gh-pages/Images/1.webp?raw=true" alt="Logo">
   </div>
 
-  <!-- Button Links -->
   <div class="buttons">
-    <a href="https://goo.gl/maps/xyz123" target="_blank"><span>📍</span>Google Map</a>
-    <a href="https://instagram.com/yourprofile" target="_blank"><span>📸</span>Instagram</a>
-    <a href="https://wa.me/919876543210" target="_blank"><span>💬</span>WhatsApp</a>
-    <a href="tel:+919876543210"><span>📞</span>Call Us</a>
-    <a href="mailto:example@email.com"><span>✉️</span>Email Us</a>
+    <a href="https://maps.app.goo.gl/CQPwvBbvYdQ45zaR9?g_st=com.google.maps.preview.copy" target="_blank"><span>📍</span>Google Map</a>
+    <a href="https://www.instagram.com/krishnaanandam_vrindavan/" target="_blank"><span>📸</span>Instagram</a>
+    <a href="https://api.whatsapp.com/send?phone=+919129054406&text=Hi,%20I%20want%20to%20know%20more%20about%20Krishna%20Anandam%20Ashram" target="_blank"><span>💬</span>WhatsApp</a>
+    <a href="tel:+919129054406"><span>📞</span>Call Us</a>
+    <a href="mailto:ashram@krishnaanandam.com"><span>✉️</span>Email Us</a>
   </div>
 
 </body>
