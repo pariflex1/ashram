@@ -1,51 +1,120 @@
 <!DOCTYPE html>
-<html amp>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Krishna Anandam Ashram</title>
-<meta name="Krishna Anandam Ashram" />
-<meta property="og:title" content="Contact Details of Krishna Anandam Ashram" />
-<meta property="og:description" content="Vrindavan, Mathura" />
-<meta property="og:image" content="https://github.com/pariflex1/ashram/blob/gh-pages/Images/og.webp?raw=true" />
-<style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: 100%;
-}
-.img-fluid {
-max-width: 100%;
-height: auto;
-line-height: 0;
-}
-@media screen and (max-width: 500px) {
-.responsive  {
-padding: 0px 0px;
-display: block;
-margin: 0px 0px;
-}
-}
-.responsive img {
-display: block;
-possition: center;   
-}
-body {
-   margin: 0;
-   padding: 0;
-}
-::-webkit-scrollbar {
-  display: none;
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Contact Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 150px;
+      margin: 0 auto 30px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .logo img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .buttons a {
+      display: block;
+      padding: 14px;
+      background: #ffffff;
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .buttons a:nth-child(1) { animation-delay: 0.2s; }
+    .buttons a:nth-child(2) { animation-delay: 0.4s; }
+    .buttons a:nth-child(3) { animation-delay: 0.6s; }
+    .buttons a:nth-child(4) { animation-delay: 0.8s; }
+    .buttons a:nth-child(5) { animation-delay: 1s; }
+
+    .buttons a:hover {
+      background: #e0e0e0;
+      transform: translateY(-2px);
+    }
+
+    .buttons a span {
+      margin-right: 8px;
+    }
+
+    @media (min-width: 600px) {
+      .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .buttons a {
+        flex: 1 1 45%;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
 </head>
-<body style="background-color:#ffffff">
-  <img src="https://github.com/pariflex1/ashram/blob/gh-pages/Images/1.webp?raw=true" loading="lazy" alt="..." />
-  <a href="https://maps.app.goo.gl/CQPwvBbvYdQ45zaR9?g_st=com.google.maps.preview.copy"><img src="https://github.com/pariflex1/ashram/blob/gh-pages/Images/2.webp?raw=true" loading="lazy" alt="..." />
-  <a href="https://www.instagram.com/krishnaanandam_vrindavan/"><img src="https://github.com/pariflex1/ashram/blob/gh-pages/Images/3.webp?raw=true" loading="lazy" alt="..." />
-  <a href="https://api.whatsapp.com/send?phone=+919129054406&text=Hi,%20I%20want%20to%20know%20more%20about%20Krishna%20Anandam%20Ashram"><img src="https://github.com/pariflex1/ashram/blob/gh-pages/Images/4.webp?raw=true" loading="lazy" alt="..." />
-  <a href="tel:+919129054406"><img src="https://github.com/pariflex1/ashram/blob/gh-pages/Images/5.webp?raw=true" loading="lazy" alt="..." />
- <a href="mailto:ashram@krishnaanandam.com"><img src="https://github.com/pariflex1/ashram/blob/gh-pages/Images/6.webp?raw=true" loading="lazy" alt="..." />
-  
-	
+<body>
+
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="https://via.placeholder.com/150x80?text=Your+Logo" alt="Logo">
+  </div>
+
+  <!-- Button Links -->
+  <div class="buttons">
+    <a href="https://goo.gl/maps/xyz123" target="_blank"><span>📍</span>Google Map</a>
+    <a href="https://instagram.com/yourprofile" target="_blank"><span>📸</span>Instagram</a>
+    <a href="https://wa.me/919876543210" target="_blank"><span>💬</span>WhatsApp</a>
+    <a href="tel:+919876543210"><span>📞</span>Call Us</a>
+    <a href="mailto:example@email.com"><span>✉️</span>Email Us</a>
+  </div>
+
+</body>
 </html>
